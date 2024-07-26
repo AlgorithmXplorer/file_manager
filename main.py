@@ -10,6 +10,3 @@ def prnt_location(func):
         func(*param,**params)
     return inner
 #endregion
-
-
-
