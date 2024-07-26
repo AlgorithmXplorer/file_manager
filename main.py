@@ -57,4 +57,22 @@ def create_a_folder():
             break
 
 #endregion
+#region #todo list od folders
+@prnt_location
+def listing():
+    folders = []
+    files = []
+    for i in os.listdir():
+        if "." in i :
+            files.append(i)
+        else:
+            folders.append(i)
+    print("FOLDERS".center(30,"_"))
+    for i in folders:
+        print(i)
+    print("FİLES".center(30,"_"))
+    for i in files:
+        print(i)
+   
+#endregion
 
