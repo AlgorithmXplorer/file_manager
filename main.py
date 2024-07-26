@@ -41,4 +41,20 @@ def choosing():
 
 #endregion
 
+#region #todo creating a folder
+def create_a_folder():
+    @prnt_location
+    def inner():
+        name = input("name: ")
+        os.mkdir(name)
+    while True:
+        try:
+            inner()
+        except FileExistsError:
+            print("already there is a folder same name so please enter different name")
+        else: 
+            print("folder has been created")
+            break
+
+#endregion
 
